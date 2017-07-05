@@ -1,32 +1,164 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <!-- Bootstrap 3-->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="bocce boys">
+    <meta name="keywords" content="hip-hop, rap, music, bocce boys">
+    <meta name="author" content="bocce boys, colin domigan">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- jQuery (im sorry)-->
+    <script type="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Bootstrap 3-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <style>
-            p {
-                font-size: 30px;
-            }
-        </style>
-        <script type="text/javascript">
-            window.onload = function() { window.location.href = "./lin/" }
-        </script>
-    </head>
-    <body>
-        <br/><br/><br/>
-        <div class="col-xs-6 col-xs-offset-3 text-center">
-        <p>
-            welcome to my websight
-        </p>
-       	<p>
-            <code><a href="/lin/">c l i c k  m e</a></code>
-        </p>
-    </body>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+        h1{
+            font-size: 160px;
+            letter-spacing: -35px;
+            color: black;
+        }
+        .strikeout:hover{
+            text-decoration: white line-through;
+        }
+
+        p {
+            font-size: 24px;
+        }
+        .footie{
+            height: auto;
+        }
+        .bg-white{
+            background-color: white;
+        }
+        body{
+            background-size: 1440px 800px;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: "Arial Black", Gadget, sans-serif;
+        }
+        #main {
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+        img.bb-lg{
+            max-width: 100%;
+            height: auto;
+        }
+        img.bb-sm{
+            max-width: 30%
+            height: auto;
+        }
+        .img-small{
+            height: 200px;
+            width: auto;
+        }
+        .bottom-block {
+            padding: 25px;
+        }
+        .outgoing {
+            height: auto;
+        }
+        .no-padding{
+         padding: 0px 0px 0px 0px !important;
+     }
+
+     .color-lite{
+        background-color: #bbeefd
+    }
+    .color-mid{
+        background-color: #18dafc
+    }
+    .color-hard{
+        background-color: #3ed2f3
+    }
+    .mobile-header{
+        margin-left: -90px;
+        width: 115%;
+    }
+    a{
+        color: black;
+    }
+    .soundcloud-block{
+        padding: 70px;
+    }
+    span.it{
+        font-style: italic;
+    }
+    @media (max-width: 1200px) { /* screen size until 1200px */
+        .large-button-font {
+            font-size: -1.5em; /* 1.5x default size */
+        }
+    }
+    @media (max-width: 1000px) { /* screen size until 1000px */
+        .large-button-font {
+            color: black;
+        }
+    }
+    @media  (max-width: 500px) { /* screen size until 500px */
+        .large-button-font {
+            font-size: -1.8em; /* 0.8x default size */
+        }
+        .bb-sm{
+            width: 50%;
+            text-decoration: line-through;
+
+        }
+
+    }
+
+</style>
+</head>
+<body>
+    <div id="main">
+        <div class="col-md-4 col-xs-12 text-center">
+            <img class="img-fluid mx-auto d-block hidden-xs hidden-sm hidden-md visible-lg visible-xl bb-lg" src="img/bocce-logo.png" alt="bocce boys"/>
+            <img class="img-fluid img-responsive mx-auto d-block visible-md hidden-lg visible-xs visible-sm bb-sm" src="img/bocce-logo-small.png" alt="bocce boys"/>
+            <span class="strike-out">
+                <h1 class="hidden-md visible-xs visible-sm mobile-header">                    
+                    <span class="rtl">B</span><span class="italic">occe</span> <span class="it">B</span>oys
+                </h1>
+            </span>
+            <div class="bg-white col-xs-12">
+                <p><a type="button" class="btn btn-block btn-lg color-hard large-button-font" target="_blank" href="https://soundcloud.com/#">listen on soundcloud</a></p>
+                <p><a type="button" class="btn btn-block btn-lg color-mid large-button-font" target="_blank" href="http://bandcamp.com/">download "subject"</a></p>
+                <p><a type="button" class="btn btn-block btn-lg color-lite large-button-font" target="_blank" href="http://bigcartel.com">merch store</a></p>
+            </div>
+            <p class="text-center">
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-8 text-center">
+            <div class="col-xs-12 outgoing bottom-block">
+                <div class="col-xs-12">
+                    <h1 class="hidden-xs hidden-sm visible-md visible-lg visible-xl">
+                        <span class="strikeout">
+                            <span class="rtl">B</span><span class="it">occe</span> B<span class="it">oys</span>
+
+                        </span>
+                    </h1>
+                </div>
+                <div class="soundcloud-block col-xs-12">
+                    <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/322249709&amp;color=000000&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+                </div>
+                <div class="col-xs-12">
+                </div>
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-offset-4 text-center bg-white footie">
+            <p class="bottom-block"> &copy; 2017 <a target="_blank" href="../bio/">bocce boys</a></p>
+            <p><a target="_blank" href="https://www.twitter.com/domigan">follow us on twitter</a></p>
+        </div>
+    </div>
+</body>
 </html>
