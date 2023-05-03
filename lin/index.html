@@ -36,43 +36,54 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
-      }
-      div#main {
-        background-color: "white" !important;
-      }
+        body {
+          max-width: 768px;
+          margin: auto;
+        }
       img {
-        max-width: 100%;
+        max-width: 768px;
         height: auto;
+      }
+      h1 {
+        color: grey;
       }
       p {
         padding-left: 50px;
         padding-right: 50px;
         max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
       }
       .no-padding {
         padding: 0px 0px 0px 0px !important;
       }
       .action-block {
-        padding-top: "500px";
-        background-color: "white";
+        margin-top: -290px;
+      }
+      .btn{
+        color: black;
+        border: 1px solid grey;
+        width: 280px;
+        background-image: linear-gradient(to right, grey, white);
+      }
+      .btn:hover{
+        background-color: gray;
       }
     </style>
   </head>
   <body>
-    <div id="main">
+
       <img
         class="img img-fluid mx-auto d-block"
         src="../img/web.png"
         alt="colin domigan"
       />
-
-      <div class="navbar navbar-fixed-bottom  col-xs-12" style="background-color: 'white'; top: 48%;">
+      <div class="action-block" style="background-color: 'white'">
         <h1>COLIN DOMIGAN NEW ALBUM 2023</h1>
         <p>
           <a
             type="button"
-            class="btn btn-md navbar-btn btn-block btn-default"
+            class="btn"
             target="_blank"
             href="https://fanlink.to/colindomigan"
             >STREAM</a
@@ -81,7 +92,7 @@
         <p>
           <a
             type="button"
-            class="btn btn-md navbar-btn btn-block btn-default"
+            class="btn"
             target="_blank"
             href="https://colindomigan.bandcamp.com"
             >BUY DIGITAL</a
@@ -90,17 +101,16 @@
         <p>
           <a
             type="button"
-            class="btn btn-md navbar-btn btn-block btn-default"
+            class="btn"
             target="_blank"
             href="https://soundcloud.com/colindomigan/"
             >SOUNDCLOUD</a
           >
         </p>
-        <!-- <p><a type="button" class="btn btn-md navbar-btn btn-block btn-danger" target="_blank" href="https://qrates.com/projects/20705">get <i>buddy list</i> vinyl</a></p> -->
         <p>
           <a
             type="button"
-            class="btn btn-md navbar-btn btn-block btn-default"
+            class="btn"
             target="_blank"
             href="https://audius.co/domigan"
             >AUDIUS</a
@@ -109,13 +119,11 @@
         <p>
           <a
             type="button"
-            class="btn btn-md navbar-btn btn-block btn-default"
+            class="btn"
             target="_blank"
             href="./old.html"
             >OLD SITE</a
           >
         </p>
-      </div>
-    </div>
   </body>
 </html>
